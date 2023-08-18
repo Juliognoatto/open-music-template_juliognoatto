@@ -7,14 +7,45 @@
     <title>Open Music</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="./src/styles/reset.css" />
     <link rel="stylesheet" href="./src/styles/globalStyles.css" />
     <link rel="stylesheet" href="./src/styles/index.css" />
 
     <!-- SCRIPTS  -->
+    <script type="module" src="./src/scripts/index.js"></script>
+    <script type="module" src="./src/scripts/productsData.js"></script>
+    <script type="module" src="./src/scripts/theme.js"></script>
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header>
+      <div class="header__itens">
+        <h1>Open Music</h1>
+        <button class="btn__darkMode">dark mode</button>
+      </div>
+    </header>
+    <main>
+      <section class="section__primary">
+        <div>
+          <h2>Gênero Musical</h2>
+          <ul class="buttons-list">
+            <!-- botoes de filtragem -->
+          </ul>
+        </div>
+        <div>
+          <div class="priceText">
+            <h2>Definir Preço</h2>
+            <p id="paragrafoPreco">Até R$...</p>
+          </div>
+          <input id="inputPreco" type="range" >
+        </div>
+      </section>
+
+      <section id="" class="section__secondary">
+        <h2>Álbuns Encontrados</h2>
+        <ul id="cardsContainer" class="cardsContainer">
+
+        </ul>
+      </section>
+    </main>
   </body>
 </html>

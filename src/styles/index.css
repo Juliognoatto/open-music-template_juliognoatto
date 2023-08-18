@@ -1,1 +1,107 @@
 /* Desenvolva sua estilização aqui ... */
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  height: 8rem;
+  justify-content: center;
+}
+
+.header__itens {
+  display: flex;
+  width: 70%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+}
+
+.section__primary {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.buttons-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin-top: 1.5rem;
+  border-style: none;
+}
+
+.priceText {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+input {
+  width: 100%;
+  margin-top: 1.5rem;
+  color: #9747FF;
+}
+
+
+
+.section__secondary {
+  display: flex;
+  flex-direction: column;
+  width: 70%;margin-top: 1.5rem;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  /* margin-top: 1.5rem; */
+}
+
+.card {
+  width: 25rem;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+}
+
+
+img {
+  width: 100%;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+p {
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+h2 {
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+span {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}

@@ -1,4 +1,4 @@
-const products = [
+export const products = [
   {
     id: 1,
     title: "Magnetite",
@@ -35,9 +35,11 @@ const products = [
     band: "Phil Collins",
     year: 1993,
   },
+
+
 ];
 
-const categories = [
+export const categories = [
   "Todos",
   "Pop",
   "MPB",
@@ -51,3 +53,6 @@ const categories = [
   "Country",
   "Gospel",
 ];
+
+
+// export const products = [id, title, category, price, img, band, year];
