@@ -34,6 +34,7 @@ function createCard(product) {
     price.textContent = `R$ ${product.price.toFixed(2)}`;
   
     const buyButton = document.createElement("button");
+    buyButton.classList.add('btn-comprar');
     buyButton.textContent = "Comprar";
   
     priceButtonContainer.appendChild(price);
