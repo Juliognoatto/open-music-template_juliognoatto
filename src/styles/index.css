@@ -75,6 +75,7 @@ main {
 }
 
 input {
+  display: flex;
   width: 100%;
   margin-top: 1.5rem;
 }
@@ -83,21 +84,28 @@ input {
 .section__secondary {
   display: flex;
   flex-direction: column;
-  width: 70%;margin-top: 1.5rem;
+  width: 70%;
+  margin-top: 1.5rem;
 }
 
 .cardsContainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /* flex-direction: row; */
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  /* justify-content: space-between; */
   list-style: none;
-  padding: 0;
   /* margin-top: 1.5rem; */
 }
 
 .card {
-  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  width: 22rem;
   margin-top: 2rem;
+  margin-right: 4rem;
   border-radius: 0.5rem;
   background-color: var(--color-grey-8);
 }
@@ -153,4 +161,10 @@ span {
 
 footer {
   margin-top: 3rem;
+}
+
+@media(max-width:1024px) {
+  .card {
+    width: 45%;
+  }
 }

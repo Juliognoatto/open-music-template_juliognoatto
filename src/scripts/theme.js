@@ -12,9 +12,9 @@ function toggleDarkMode() {
     localStorage.setItem('@openMusic:darkMode', isDarkMode.toString());
 
     if (isDarkMode) {
-      darkModeButton.innerHTML = '<img src="src/assets/img/sun-regular.svg" alt="Light Mode">';
+      darkModeButton.innerHTML = '<img src="src/assets/img/sun.svg" alt="Light Mode">';
     } else {
-      darkModeButton.innerHTML = '<img src="src/assets/img/moon-solid.svg" alt="Dark Mode">';
+      darkModeButton.innerHTML = '<img src="src/assets/img/moon.svg" alt="Dark Mode">';
     }
   });
 
@@ -22,10 +22,10 @@ function toggleDarkMode() {
 
   if (storedDarkMode === 'true') {
     html.classList.add('dark-mode');
-    darkModeButton.innerHTML = '<img src="src/assets/img/sun-regular.svg" alt="Light Mode">';
+    darkModeButton.innerHTML = '<img src="src/assets/img/sun.svg" alt="Light Mode">';
   } else {
     html.classList.remove('dark-mode');
-    darkModeButton.innerHTML = '<img src="src/assets/img/moon-solid.svg" alt="Dark Mode">';
+    darkModeButton.innerHTML = '<img src="src/assets/img/moon.svg" alt="Dark Mode">';
   }
 }
 
