@@ -65,7 +65,13 @@ main {
 .botao-categoria:hover {
   background-color: var(--color-grey-2);
   color: var(--color-grey-8);
+}
 
+.botao-categoria:focus {
+  background-color: var(--color-grey-2);
+  color: var(--color-grey-8);
+  border-color: var(--color-grey-8);
+  box-sizing: 0.3rem;
 }
 
 .priceText {
@@ -91,13 +97,8 @@ input {
 .cardsContainer {
   display: flex;
   flex-wrap: wrap;
-  /* flex-direction: row; */
-  /* justify-content: center; */
   align-items: center;
-  /* flex-wrap: wrap; */
-  /* justify-content: space-between; */
   list-style: none;
-  /* margin-top: 1.5rem; */
 }
 
 .card {
@@ -108,6 +109,7 @@ input {
   margin-right: 4rem;
   border-radius: 0.5rem;
   background-color: var(--color-grey-8);
+  overflow: hidden;
 }
 
 
@@ -167,4 +169,12 @@ footer {
   .card {
     width: 45%;
   }
+}
+
+.card:hover {
+  background-color: var(--color-grey-7);
+}
+
+img:hover {
+  transform: scale(1.1);
 }
